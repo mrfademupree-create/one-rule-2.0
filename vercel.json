@@ -1,0 +1,14 @@
+{
+  "crons": [
+    {
+      "path": "/api/generate-rule",
+      "schedule": "0 5 * * *",
+      "headers": { "x-cron-secret": "@cron_secret" }
+    },
+    {
+      "path": "/api/send-daily-email",
+      "schedule": "5 5 * * *",
+      "headers": { "x-cron-secret": "@cron_secret" }
+    }
+  ]
+}
