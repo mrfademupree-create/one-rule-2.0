@@ -2,13 +2,11 @@
   "crons": [
     {
       "path": "/api/generate-rule",
-      "schedule": "0 5 * * *",
-      "headers": { "x-cron-secret": "@cron_secret" }
+      "schedule": "0 5 * * *"
     },
     {
       "path": "/api/send-daily-email",
-      "schedule": "5 5 * * *",
-      "headers": { "x-cron-secret": "@cron_secret" }
+      "schedule": "5 5 * * *"
     }
   ]
 }
